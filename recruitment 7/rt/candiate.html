@@ -1,0 +1,495 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard"></span>
+      </div>
+      <div class="profile-details">
+        <span class="admin_name">welcome,<b>Santhana kirubakaran</b></span>
+        <span>
+          <img src="img/notfication.svg" alt="no image" style="height:25px; width:25px;">
+        </span>
+      </div>
+      </style>
+      </head>
+      <body style="height:100% class='fonts' ">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">SK</button>
+          <div id="myDropdown" class="dropdown-content" style="width: 260px; right: 0;">
+            <a href="#home" class="sk_drop" style="text-align: center;">
+              <h5>SK</h5>
+              <div>
+                <p>santhana kirubakaran</p>
+                <p id="des">
+                  senior Ux designer
+                </p>
+              </div>
+              <div class="drop-down-list" id="my-profile">
+                <a href="#"><img src="img/user.svg" class="icon-img" /><span class="List-name">My Profile</span></a>
+              </div>
+              <div class="drop-down-list" id="my-profile">
+                <a href="index.html"><img src="img/logout.svg" class="icon-img" /><span
+                    class="List-name">Logout</span></a>
+              </div>
+          </div>
+          <div>
+          </div>
+          </a>
+        </div>
+    </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="color">
+    <div class="myDiv">
+      <div class="search_icon">
+        <span class="search"> <img src="img/search.svg" /></span>
+        <input type="text" id="myInput" onkeyup="search()" placeholder="Enter RRF/skills/phone no"
+          title="Type in a name">
+        <span class="filter_icon icon_filter"><img src="img/filter.svg" data-toggle="modal" data-target="#exampleModal" style="border-left: 2px solid #9e9e9e; padding-left:5px;"></span>
+      </div>
+      <div>
+        <a href="addcandiateprofile.html">
+        <input class="buttons" type="button" value="+Add Profile"  /></a>
+      </div>
+    </div>
+  </div>
+  <table  id="example" id="selectedColumn" class="table table-bordered table-sm" cellspacing="40px" width="100%" height="auto" cellpadding="18" class="searchable sortable">
+    
+    <tr class="head">
+      <th>RRF<img src="img/sort.svg" class="sort"></th>
+      <th>Name<img src="img/sort.svg" class="sort"></th>
+      <th>skill<img src="img/sort.svg" class="sort"></th>
+      <th>YOE<img src="img/sort.svg" class="sort"></th>
+      <th>Phone no<img src="img/sort.svg" class="sort"></th>
+      <th>sourced Date<img src="img/sort.svg" class="sort"></th>
+      <th>Email Id<img src="img/sort.svg" class="sort"></th>
+      <th>Status<img src="img/sort.svg" class="sort"></th>
+      <th>portal<img src="img/sort.svg" class="sort"></th>
+      <th>remarks<img src="img/sort.svg" class="sort"></th>
+      <th></th>
+    </tr>
+    <tbody class="rt"  id="cool">
+      <tr>
+        <td>23456</td>
+        <td>xcvv</td>
+        <td>vdvdv</td>
+        <td>567678</td>
+      </tr>
+
+      
+    </tbody>
+  </table>
+  <div class="footer">
+    <div class="pagination">
+      <a class="leftarrow" href="#" id="pag"><</a>
+          <a href="addcandiateprofile.html" id="page">1</a>
+          <a href="addprofile.html" id="pages">2</a>
+          <a href="candiatepersonal.html" id="pagesi">3</a>
+          <a href="addcandiateprofile.html" id="pagesina">4</a>
+          <a href="#" id="pagesinat">5</a>
+          <a href="#" id="pagesinatio">6</a>
+          <a class="leftarrow" href="#" id="pagesinatioss">></a>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="mod-title" id="exampleModalLabel">Advanced Filter</h5>
+          <h5 class="modal-title" id="exampleModalsLabel">clear all</h5>
+
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+      <div class="inform_data">
+        <div class="position-relative mt-2">
+          <p class="cus_lable">Date</p>
+          <input type="date" id="birthday" name="birthday" class="date_custom dot custom" > 
+        </div>
+        <div class="position-relative mt-2">
+           <p class="cus_lable">RRF</p>
+         
+           <select class="date_custom dot_custom">
+            <option></option>
+            <option>1254678</option>
+            <option>2546789</option>
+            <option>456890</option>
+            <option>34567</option>
+          </select>
+        </div>
+        <div class="position-relative mt-2">
+          <p class="cus_lable">Experience</p>
+          <select class="date_custom dot_custom">
+            <option></option>
+            <option>2 years</option>
+            <option>5 years</option>
+            <option>7 years</option>
+          </select>         
+        </div>
+        <div class="position-relative mt-2">
+          <p class="cus_lable">location</p>
+            <select class="date_custom dot_custom">
+              <option></option>
+              <option>chennai</option>
+              <option>Mumbai</option>
+              <option>Banglore</option>
+            </select>  
+        </div>
+        <div class="position-relative mt-2">
+          <p class="cus_lable">Practice</p>
+          <select class="date_custom dot_custom">
+            <option></option>
+            <option>java</option>
+            <option>python</option>
+            <option>javascript</option>
+          </select>  
+        </div>
+        <div class="position-relative mt-2">
+          <p class="cus_lable">Status</p>
+          <select class="date_custom dot_custom">
+            <option></option>
+            <option>open</option>
+            <option>waiting</option>
+            <option>closed</option>
+          </select>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="sec" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Filter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>    
+    </section>
+  <script>
+    function search() {
+
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("selectedColumn");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          console.log(txtValue)
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+    
+
+
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }-
+    // $(document).ready(function () {
+    //   alert("alert");
+    //   $('#selectedColumn').DataTable({
+    //     "aaSorting": [],
+    //     columnDefs: [{
+    //       orderable: false,
+    //       targets: 3
+    //     }]
+    //   });
+    //   $('.dataTables_length').addClass('bs-select');
+    // });
+    $(".form-select").on("change", function () {
+      alert("alert");
+      if ($(this).val() == "open") {
+        $(this).removeClass("closed");
+        $(this).removeClass("waiting");
+        $(this).addClass("open");
+      }
+      if ($(this).val() == "closed") {
+        $(this).removeClass("open");
+        $(this).removeClass("waiting");
+        $(this).addClass("closed");
+      }
+      if ($(this).val() == "waiting") {
+        $(this).removeClass("open");
+        $(this).removeClass("closed");
+        $(this).addClass("waiting");
+      }
+    });
+    //  $('.datepicker').datepicker({
+    //   weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+    //   showMonthsShort: true
+    // })
+
+  function checkmatch(fld) {
+  var row = fld.closest("tr")
+  var stock = +row.querySelector(".stock").value;
+  var added = +row.querySelector(".edit1").value;
+  row.querySelector(".res").innerHTML = added <= stock ? ' Matched': '<b class="vari">Variation: ' + Math.abs(stock - added)+'</b>';
+}
+// window.addEventListener("load", function() {
+//   document.getElementById("table").addEventListener("input", function(e) {
+//     var obj = e.target;
+//     if (obj.classList.contains("edit1")) checkmatch(obj)
+//   })
+//   document.getElementById(" ").addEventListener("submit",function(e) {
+//     document.querySelectorAll(".edit1").forEach(function(fld) {checkmatch(fld)})
+//     var variation = document.getElementById("table1").querySelector(".vari")
+//     if (variation) {
+//       e.preventDefault()
+//       alert("Please fix the variation in " + variation.closest("tr").querySelector("td").firstElementChild.value);
+//       var inp = variation.closest("td").querySelector("input")
+//       inp.select();
+//       inp.focus();
+//     }  
+//   })
+//   // when loading
+//   document.querySelectorAll(".edit1").forEach(function(fld) {checkmatch(fld)})
+// })
+function checkmatch(fld) {
+  var row = fld.closest("tr")
+  var stock = +row.querySelector(".stock").value;
+  var added = +row.querySelector(".edit1").value;
+  row.querySelector(".res").innerHTML = added <= stock ? ' Matched': '<b class="vari">Variation: ' + Math.abs(stock - added)+'</b>';
+}
+// window.addEventListener("load", function() {
+//   document.getElementById("table1").addEventListener("input", function(e) {
+//     var obj = e.target;
+//     if (obj.classList.contains("table")) checkmatch(obj)
+//   })
+//   document.getElementById("test").addEventListener("submit",function(e) {
+//     document.querySelectorAll(".edit1").forEach(function(fld) {checkmatch(fld)})
+//     var variation = document.getElementById("table1").querySelector(".vari")
+//     if (variation) {
+//       e.preventDefault()
+//       alert("Please fix the variation in " + variation.closest("tr").querySelector("td").firstElementChild.value);
+//       var inp = variation.closest("td").querySelector("input")
+//       inp.select();
+//       inp.focus();
+//     }  
+//   })
+//   // when loading
+//   document.querySelectorAll(".edit1").forEach(function(fld) {checkmatch(fld)}) 
+// })
+function validate(){  
+var name=document.f1.name.value;  
+var password=document.f1.password.value;  
+var status=false;  
+  
+if(name.length<1){  
+document.getElementById("nameloc").innerHTML=  
+"<img src='unchecked.gif'/> Please enter your name";  
+status=false;  
+}else{  
+document.getElementById("nameloc").innerHTML=" <img src='checked.gif'/>";  
+status=true;  
+}  
+if(password.length<6){  
+document.getElementById("passwordloc").innerHTML=  
+" <img src='unchecked.gif'/> Password must be at least 6 char long";  
+status=false;  
+}else{  
+document.getElementById("passwordloc").innerHTML=" <img src='checked.gif'/>";  
+}  
+return status;  
+} 
+
+
+
+var jsonData =JSON.parse(localStorage.getItem("candidate"));
+console.log(jsonData)
+// $.each(jsonData.cart, function(key, value){
+//   $('tbody').append(`<tr>
+//   <td class="Book_Title">${value.title}</td>
+//   <td class="Author">${value.Author}</td>
+// </tr>`);
+// })
+ var get = localStorage.getItem("candidate");//retrieves announcements from local storage 
+ var create = JSON.parse(get);
+ var API = 
+    fetch('https://jsonplaceholder.typicode.com/todos/12')
+  .then(response => response.json())
+  .then(json => console.log(json))
+
+console.log("create")
+ var text = " ";
+ for (i = 0; i < create.length; i++) { //displays multiple announcements
+    text += "<tr onclick=edit("+i+")>";
+    text += "<td>" + create[i].contact+ "</td>";//displayscategory
+    text += "<td>" + create[i].name+"</td>";//displaysname
+    text += "<td>" + create[i].job+ "</td>";//displaysclub
+    text += "<td>" + create[i].pan+ "</td>";//displaysgender
+    text += "<td>" + create[i].portal+ "</td>";
+    text += "<td>" + create[i].email+ "</td>";//displaysgrade  
+    text+='<td><select class="form-select" id="paragraphSpaceOPtion' + i +'"  value="'+i+'"><option value="open">open</option><option>waiting</option><option>closed</option></select></td>'
+    text+= "<td>" + create[i].portal+ "</td>";//displaysportal
+    text+="<td>" + create[i].remark+"</td>";
+    text+="<td><button class='tron'onclick='deletenew("+i+")'>Delete</button></td>"
+    // text+="<td><button class='tron'onclick='edit("+i+")'>edit </button></td>"
+    
+    
+document.getElementById("cool").innerHTML = text;
+    }
+   
+    $(document).ready(function(){
+      $(document).on('change', 'select', function(){
+       console.log($(this).attr('value'));
+       var val = $('option:selected',this).val()
+   //call get($(this).attr('value'))
+   console.log(val);
+   if(val=="open"){
+  var newval="open";
+  $('.active').removeClass('active');
+  $(this).addClass('active'); 
+
+}else{
+  var newval="open";  
+}
+
+if(val=="closed"){
+  var newval="closed";
+  $('.active').removeClass('active');
+  $(this).addClass('closed'); 
+
+}else{
+  var newval="closed";
+  $('.closed').removeClass('closed');
+  $(this).addClass('waiting'); 
+
+
+}
+if(val=="waiting"){
+  var newval="waiting";
+  $('.waiting').removeClass('waiting');
+  $(this).addClass(''); 
+
+}else{
+  var newval="waiting";
+  $('.waiting').removeClass('active');
+  $(this).addClass('active'); 
+ 
+}
+      });
+      $('select').trigger('change')
+    });
+
+//     for (i = 0; i < create.length; i++) { 
+
+//     var selector = document.querySelector("#paragraphSpaceOPtion2");
+// var oldClass=""; // define variable for previously selected class which is blank by default
+// //
+// selector.addEventListener("change", select);
+// var oldClass=""  
+// function select( ) {
+  
+// var content = document.querySelector("#paragraphSpaceOPtion2");
+
+
+
+// }
+//     }
+   
+
+    function deletenew(i)
+    {
+
+      var jsonData =JSON.parse(localStorage.getItem("candidate"));
+console.log(jsonData)
+
+
+ jsonData.splice( i,1);
+
+console.log(jsonData);
+localStorage.setItem("candidate", JSON.stringify(jsonData));
+      //alert(i)
+
+
+    }
+    function edit(i)
+    {
+      // window.location = '/task/recruitment%207/recruitment/candiatepersonal.html?userid=' + i;
+       window.location = '/task/recruitment%207/rt/candiatepersonal.html?userid=' + i;
+
+    
+      
+
+
+    }
+
+    function onEdit(td) {
+    selectedRow = td.parentElement.parentElement;
+    document.getElementById("fullName").value = selectedRow.cells[0].innerHTML;
+    document.getElementById("email").value = selectedRow.cells[1].innerHTML;
+    document.getElementById("salary").value = selectedRow.cells[2].innerHTML;
+    document.getElementById("city").value = selectedRow.cells[3].innerHTML;
+}
+function updateRecord(formData) {
+    selectedRow.cells[0].innerHTML = formData.fullName;
+    selectedRow.cells[1].innerHTML = formData.email;
+    selectedRow.cells[2].innerHTML = formData.salary;
+    selectedRow.cells[3].innerHTML = formData.city;
+}
+
+function onDelete(td) {
+    if (confirm('Are you sure to delete this record ?')) {
+        row = td.parentElement.parentElement;
+        document.getElementById("employeeList").deleteRow(row.rowIndex);
+        resetForm();
+    }
+}
+function validate() {
+    isValid = true;
+    if (document.getElementById("fullName").value == "") {
+        isValid = false;
+        document.getElementById("fullNameValidationError").classList.remove("hide");
+    } else {
+        isValid = true;
+        if (!document.getElementById("fullNameValidationError").classList.contains("hide"))
+            document.getElementById("fullNameValidationError").classList.add("hide");
+    }
+    return isValid;
+}
+</script>   
+</body>
+</html>
