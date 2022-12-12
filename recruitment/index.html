@@ -1,0 +1,80 @@
+ <html>
+
+<head>
+    <title>Recruitment status </title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script >
+            function validateForm() {
+               
+//                 let x = document.forms["myForm"]["fname"].value;              
+//           if (x == "") {
+//     alert("Name must be filled out");
+//     return false;
+//   }
+
+
+ 
+       
+ var static_user="pritivi";
+ var static_password="hinduja@123";
+ var username =document.getElementById("username").value;
+ var password =document.getElementById("password").value;
+
+ if(username == static_user && static_password == password)
+ {
+  
+   location.href = "file:///C:/Users/18717/pritivi/pritivi/recruitment/candiate.html";
+ }
+ else
+ {
+  alert("Enter validate data ");
+ }
+ 
+            }
+        </script>
+</head>
+<body>
+    <div class="main-div">
+        <div class="first-div">
+            <img src="img/login.png"></img>
+        </div>
+        <div class="second-div">
+            <div class="form-class card_item">
+                <h4 class="h3-color">Login to your Account</h4>
+                <form name="myForm">
+                    <div class="user_rel">
+                        <input type='text' class="login_username" width="5px" placeholder='User Name'id="username" name='fname' required>
+                        <img src="img/user.svg" alt="" class="enter_icon">
+                    </div> 
+                    <div class="pos_rel">
+                        <input type='password' class="key" placeholder='Password' name='password' id="password" required>
+                        <img src="img/password.svg" alt="" class="forget_icon">
+                    </div>
+                    <input type='button' onclick="validateForm()" value='LOGIN -->'>
+                </form>
+                <div class="base">
+                    <br>
+                    <br>
+                    <br>
+                    <h6><a href="forget.html">Forget Password? </a></h6>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div id="footer1">
+        <p> Copyright@ 2021 Hinduja tech ltd.All rights reserved </p>
+    </div>
+    <div id="footer2">
+        <p> Designed by Hinduja Tech</p>
+    </div>
+    <form name="myForm" action="/action_page.php" method="post">
+        <input type="text" name="first name">
+        <input type="submit" value="Submit">
+      </form>
+      <script src="js/app.js"></script>
+</body>
+</html>

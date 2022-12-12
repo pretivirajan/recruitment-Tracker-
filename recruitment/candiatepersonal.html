@@ -1,0 +1,362 @@
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="UTF-8">
+      <script src="multiselect-dropdown.js" ></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://harvesthq.github.io/chosen/chosen.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="//harvesthq.github.io/chosen/chosen.jquery.js"></script>
+   </head>
+   <body style="    background: #e1e5ec;">
+      <div>
+      </div>
+      <section class="home-section">
+         <nav>
+         <h5 id="candi">candiates profile</h5>
+         <div class="sidebar-button">
+            <i class='bx bx-menu sidebarBtn'></i>
+            <span class="dashboard"></span>
+         </div>
+         <div class="profile-details">
+            <span class="admin_name">welcome,<b>Santhana kirubakaran</b></span>
+            <span>
+            <img src="img/notfication.svg" alt="no image" style="height:25px; width:25px;">
+            </span>
+         </div>
+         </style>
+         </head>
+         <body style=height:100% ,width:100%>
+            <div class="dropdown">
+               <button onclick="myFunction()" class="dropbtn">SK</button>
+               <div id="myDropdown" class="dropdown-content" style="width: 260px; right: 0;">
+                  <a href="#home" class="sk_drop" style="text-align: center;">
+                     <h5>SK</h5>
+                     <div>
+                        <p>santhana kirubakaran</p>
+                        <p id="des">
+                           senior Ux designer
+                        </p>
+                     </div>
+                     <div class="drop-down-list" id="my-profile">
+                  <a href="#"><img src="img/user.svg" class="icon-img" /><span class="List-name">My Profile</span></a>
+                  </div>
+                  <div class="drop-down-list" id="my-profile">
+                     <a href="index.html"><img src="img/logout.svg" class="icon-img" /><span
+                        class="List-name">Logout</span></a>
+                  </div>
+               </div>
+               <div>
+               </div>
+               </a>
+            </div>
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="color">
+      <div class="myDiv inner_header">
+      <a href="candiates10.html"><img
+         src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/20/000000/external-left-arrow-arrows-dreamstale-lineal-dreamstale-15.png" />
+      </a>
+      <h3>2546879</h3></span>
+      </div>
+      <div class="cus_container main_box_border">
+      <div class="col-md-12 pl-4">
+      <img src="img/Group%2057.svg"><span class="lorem">Lorem_Ipsum_resume</span>
+      <span> 
+         <!-- <button class="edit" type="button" value=" Edit"> <img id="dit"src="img/dit..png">Edit</button>  -->
+         <button  class="edit" type="button" value="Edit" onclick="enable();"><img id="dit"src="img/dit..png">Edit </button>
+         <!-- <button onclick="enable()">enable</button> -->
+         <!-- <button onclick="disable()">Disable</button>
+<button onclick="enable()">enable</button> -->
+      </span>
+      </div>
+      <form   onsubmit="event.preventDefault();">
+      <div class="row col-md-12 justify-content-between">
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable">Name</p>
+      <input class="date_custom calander_custom" type="text" id="my_field" value="Aaliya.c" >
+      <p id="demo"></p>
+      </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable" >Email</p>
+      <input class="date_custom calander_custom"id="emailss" type="email" id="name" value="Loremipsum@gmail.com">
+      <p id="emailmsg"></p>   
+   </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable" >Job location</p>    
+      <input class="date_custom calander_custom" id="job" type="text">
+      <p id="loc"></p>
+      </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable">status</p>
+      <input class="date_custom calander_custom" id="status" type="text" value="open" >
+      </div>
+      </div>
+      <div class="row col-md-12 justify-content-between">
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable" >Education</p>
+      <input class="date_custom calander_custom" id="education" type="text" value="B.E computer science" >
+      <p id="educ"></p>  
+      </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable">Employer</p>
+      <input class="date_custom calander_custom" type="employer" value="123 Digital solutions Ltd.">
+      </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable">contact number</p> 
+      <input class="date_custom calander_custom" type="text" id="rrf" value="DTS">
+      </div>
+      <div class="position-relative mt-3 col-md-3 ">
+      <p class="ofer_lable">Offer in Hand</p>
+      <!-- Default switch -->
+      <div class="custom-control custom-switch pl-5" style="margin-left: 5px;">
+      <label class="offer_no_lable">No</label>
+      <input type="checkbox" class="custom-control-input" id="customSwitches">
+      <label class="custom-control-label" for="customSwitches">Yes</label>
+      </div> 
+      </div>
+      </div>
+      <div class="row col-md-12 justify-content-between">
+      <div class="position-relative mt-3 col-md-3 skill_select">
+      <p class="skil_lable" >Skill</p>
+      <div id="output"></div>
+           <select style="width: 320px;
+           height: 62px;
+           padding: 8px;
+       " data-placeholder="Choose Skills ..." name="tags[]" multiple class="chosen-select">
+              <option></option>
+              <option value="Engineering">photoshopeev</option>
+              <option value="Carpentry">Adobe XD</option>
+              <option value="Plumbing">illustrator</option>
+              <option value="Electical">Figma</option>    
+          </select>  
+      </div>
+     
+      <div class="col-md-3 CCTC_ECTC_flex">
+      <div class="position-relative mt-2">
+      <p class="cus_lable">CCTC</p>  
+      <input class="date_custom calander_custom" type="text" id="cctc"value="8,00,000">
+      </div>
+      <div class="position-relative mt-2">
+      <p class="cus_lable">ECTC</p>
+      <input class="date_custom calander_custom" type="text" id="Ectc" value="12,00,000">
+      </div> 
+      </div>
+      <div class="position-relative mt-3 col-md-3 mlmin_30">
+      <p class="cus_lable">Customer</p>
+      <input class="date_custom calander_custom" type="text" value="Hyundai" id="customer" >
+      </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable" >Portal</p>
+      <input class="date_custom calander_custom" id="pan" type="text" >
+      <p id="get_pan"></p>
+      </div>
+      </div>
+      <div class="row col-md-12 justify-content-between">
+      <div class="position-relative mt-2 col-md-3 experience_flex">
+      <p class="cus_lable">Experience</p>
+      <input class="date_custom calander_custom experience_flex_years_count" type="text" value="5 years">
+      <div class="mt_20px">
+      <input class="date_custom calander_custom" type="text" value="5 months">
+      </div>
+      </div>
+      <div class="position-relative mt-2 col-md-3 pl-0">
+      <p class="cus_lable" >Notice Period</p>
+      <input class="date_custom calander_custom"id="period" type="text" value="30 Days" >
+      </div>
+      <div class="position-relative mt-3 col-md-3 pl-0">
+      <p class="cus_lable">Practice</p>
+      <input class="date_custom calander_custom" id="practice" type="text" value="DTS" >
+      </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable" >RM</p>
+      <input class="date_custom calander_custom"id="RM" type="text area" value="Srinivasan" >
+      </div>
+      </div>
+      <div class="col-md-12 justify-content-start row lastrow">
+        <div class="position-relative mt-3 col-md-3">
+          <p class="cus_lable" >RRF</p>
+          <input class="date_custom calander_custom"id="contact" type="text" value="" >
+          <p id="information"></p>
+          </div>
+          <div class="position-relative mt-3 col-md-3">
+          <p class="cus_lable" >Current location</p>
+          <input class="date_custom calander_custom"id="current" type="text" value="chennai" >
+          </div>
+          <div class="position-relative mt-3 col-md-3 pl-0 ml-3" >
+          <p class="cus_lable">Remarks</p>
+          <textarea id="remark" cols="35" rows="5" class="remark_textarea">Lorem ipsum dolor sit amet,consectetuer adipiscing elit Aenean commando ligula eget dolor Aenean massa</textarea>
+          <p id="valuess"></p>
+          </div>
+      </div>
+      <input type="submit" class="click" onclick="update_data()"> 
+      </div>
+      </div>
+   </form>
+      <script >  
+  
+	document.getElementById("my_field").disabled = "true";
+  
+  function enable(){
+	document.getElementById("my_field").disabled = "";
+  }
+  document.getElementById("email").disabled = "true";
+  
+  function enable(){
+	document.getElementById("email").disabled = "";
+  }
+  document.getElementById("job").disabled = "true";
+  
+  function enable(){
+	document.getElementById("job").disabled = "";
+  }
+  document.getElementById("status").disabled = "true";
+  
+  function enable(){
+	document.getElementById("status").disabled = "";
+  }
+  document.getElementById("education").disabled = "true";
+  
+  function enable(){
+	document.getElementById("education").disabled = "";
+  }
+  
+  
+
+const params = new URLSearchParams(window.location.search)
+console.log(params.get("userid"));
+const userid = params.get("userid");
+var jsonData =JSON.parse(localStorage.getItem("candidate"));
+console.log(jsonData);
+var filteredjson = jsonData.filter((_, index) => index == userid);
+console.log(filteredjson);
+document.getElementById("my_field").value=filteredjson[0].name;
+document.getElementById("emailss").value=filteredjson[1].email;
+document.getElementById("job").value=filteredjson[0].job_location;
+
+
+
+         function myFunction() {
+           const inpObj = document.getElementById("id1");
+            if (!inpObj.checkValidity()) {
+            document.getElementById("demo").innerHTML = inpObj.validationMessage;
+            }
+}      
+ function validate(evt){
+  var name = document.getElementById("name").value;
+  var job = document.getElementById("job").value;
+  var phone = document.getElementById("contact").value;
+  var email = document.getElementById("email").value;
+  var pan = document.getElementById("pan").value;
+  var education = document.getElementById("education").value;
+  var remark = document.getElementById("remark").value;
+
+  let newProduct = {
+         id: name,
+        name: productName.toUpperCase(),
+        category: productCategory,
+        description: productDescription
+       };
+       array =[]
+       array.push(newProduct);
+       [{
+         id: "sa",
+        name: "Sd",
+        category: "sd",
+        description: "sd"
+
+       },{
+         id: "sa",
+        name: "Sd",
+        category: "sd",
+        description: "sd"
+
+       },
+
+      ]
+  //console.log("remark",remark);
+  var error_message = document.getElementById("demo");
+  var contact=document.getElementById("practice")
+  error_message.style.padding = "10px";
+  var text;
+ 
+  if(name.length < 5){
+    document.getElementById('name').style.border='1px solid red'
+    text = "Please Enter valid Name";
+    document.getElementById("demo").innerHTML = text;
+    return false;
+  }
+
+  if(job.length <= 0){
+    document.getElementById('job').style.border='1px solid red'
+    text = "Please Enter valid Name";
+    document.getElementById("loc").innerHTML = text;
+    return false;
+  }
+   
+  
+  if(phone.length < 1){
+     document.getElementById('contact').style.border='1px solid red'
+     text = "Please Enter Valid subject";
+     document.getElementById('').innerHTML = text;
+    return false;
+  }
+  if(remark.length < 1){
+   alert("remark data not filled ");
+   document.getElementById('remark').style.border='1px solid red'
+  text="Please Enter valid Name";
+  document.getElementById("valuess").innerHTML=text;
+  return false;
+  }
+  
+  
+  if(pan.length === 0){
+   alert("kgf")
+  document.getElementById('pan').style.border='1px solid red'
+  text="Please Enter Valid pan number";
+  document.getElementById('get_pan').innerHTML= text;
+  return false;
+  }
+  
+  if(education.length===0 ){
+    document.getElementById('education').style.border='1px solid red'
+   alert("Please enter valid data");
+     text = "Please Enter Valid data";
+     document.getElementById('educ').innerHTML = text;
+     return false;
+   } 
+
+
+   if(contact.length===0){
+   document.getElementById('contact').style.border='1px solid red'
+    text = "Please Enter Valid Password";
+    documnet.getElementById('information').innerHTML = text;
+    return false;
+  }
+  
+  if(message.length <= 140){
+    text = "Please Enter Mopre Than 10 Characters";
+    error_message.innerHTML = text;
+    return false;
+  }
+  alert("Form Submitted Successfully!");
+  return true;
+}    
+
+function update_data(){
+   alert();
+}
+
+      </script>
+   </body>
+</html>

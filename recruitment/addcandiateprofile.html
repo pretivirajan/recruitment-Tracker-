@@ -1,0 +1,319 @@
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="UTF-8">
+      <script src="multiselect-dropdown.js" ></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://harvesthq.github.io/chosen/chosen.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="//harvesthq.github.io/chosen/chosen.jquery.js"></script>
+   </head>
+   <body style="    background: #e1e5ec;">
+      <div>
+      </div>
+      <section class="home-section">
+         <nav>
+         <h5 id="candi">candiates profile</h5>
+         <div class="sidebar-button">
+            <i class='bx bx-menu sidebarBtn'></i>
+            <span class="dashboard"></span>
+         </div>
+         <div class="profile-details">
+            <span class="admin_name">welcome,<b>Santhana kirubakaran</b></span>
+            <span>
+            <img src="img/notfication.svg" alt="no image" style="height:25px; width:25px;">
+            </span>
+         </div>
+         </style>
+         </head>
+         <body style=height:100% ,width:100%>
+            <div class="dropdown">
+               <button onclick="myFunction()" class="dropbtn">SK</button>
+               <div id="myDropdown" class="dropdown-content" style="width: 260px; right: 0;">
+                  <a href="#home" class="sk_drop" style="text-align: center;">
+                     <h5>SK</h5>
+                     <div>
+                        <p>santhana kirubakaran</p>
+                        <p id="des">
+                           senior Ux designer
+                        </p>
+                     </div>
+                     <div class="drop-down-list" id="my-profile">
+                  <a href="#"><img src="img/user.svg" class="icon-img" /><span class="List-name">My Profile</span></a>
+                  </div>
+                  <div class="drop-down-list" id="my-profile">
+                     <a href="index.html"><img src="img/logout.svg" class="icon-img" /><span
+                        class="List-name">Logout</span></a>
+                  </div>
+               </div>
+               <div>
+               </div>
+               </a>
+            </div>
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="color">
+      <div class="myDiv inner_header">
+      <a href="candiate.html"><img
+         src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/20/000000/external-left-arrow-arrows-dreamstale-lineal-dreamstale-15.png" />
+      </a>
+      <h3>2546879</h3></span>
+      </div>
+      <div class="cus_container main_box_border">
+      <div class="col-md-12 pl-4">
+      <img src="img/Group%2057.svg"><span class="lorem">Lorem_Ipsum_resume</span>
+      <span> </span>
+      </div>
+      <form onsubmit="event.preventDefault();validate();">
+      <div class="row col-md-12 justify-content-between">
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable">Name</p>
+      <input class="date_custom calander_custom" type="text" id="name" >
+      <p id="demo"></p>
+      </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable" >Email</p>
+      <input class="date_custom calander_custom"id="email" type="email"  >
+      <p id="emailmsg"></p>   
+   </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable" >Job location</p>    
+      <input class="date_custom calander_custom" id="job" type="text">
+      <p id="loc"></p>
+      </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable">status</p>
+      <input class="date_custom calander_custom" id="status" type="text"  >
+      </div>
+      </div>
+      <div class="row col-md-12 justify-content-between">
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable" >Education</p>
+      <input class="date_custom calander_custom" id="techinical" type="text"  >
+      <p id="educ"></p>  
+      </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable">Employer</p>
+      <input class="date_custom calander_custom" type="employer" >
+      </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable">portal</p> 
+      <input class="date_custom calander_custom" type="text" id="web">
+      </div>
+      <div class="position-relative mt-3 col-md-3 ">
+      <p class="ofer_lable">Offer in Hand</p>
+      <!-- Default switch -->
+      <div class="custom-control custom-switch pl-5" style="margin-left: 5px;">
+      <label class="offer_no_lable">No</label>
+      <input type="checkbox" class="custom-control-input" id="customSwitches">
+      <label class="custom-control-label" for="customSwitches">Yes</label>
+      </div> 
+      </div>
+      </div>
+      <div class="row col-md-12 justify-content-between">
+      <div class="position-relative mt-3 col-md-3 skill_select">
+      <p class="skil_lable">Skill</p>
+      <div id="output"></div>
+           <select data-placeholder="Choose Skills ..." name="tags[]" multiple class="chosen-select">
+              <option></option>
+              <option value="Engineering">photoshopeev</option>
+              <option value="Carpentry">Adobe XD</option>
+              <option value="Plumbing">illustrator</option>
+              <option value="Electical">Figma</option>    
+          </select>  
+      </div>
+     
+      <div class="col-md-3 CCTC_ECTC_flex">
+      <div class="position-relative mt-2">
+      <p class="cus_lable">CCTC</p>  
+      <input class="date_custom calander_custom" type="text" id="cctc">
+      </div>
+      <div class="position-relative mt-2">
+      <p class="cus_lable">ECTC</p>
+      <input class="date_custom calander_custom" type="text" id="Ectc">
+      </div> 
+      </div>
+      <div class="position-relative mt-3 col-md-3 mlmin_30">
+      <p class="cus_lable">RRF</p>
+      <input class="date_custom calander_custom" type="text" id="contact"  >
+      </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable" >Pan Num</p>
+      <input class="date_custom calander_custom" id="pan" type="text" >
+      <p id="get_pan"></p>
+      </div> 
+      </div>
+      <div class="row col-md-12 justify-content-between">
+      <div class="position-relative mt-2 col-md-3 experience_flex">
+      <p class="cus_lable">Experience</p>
+      <input class="date_custom calander_custom experience_flex_years_count" type="text" >
+      <div class="mt_20px">
+      <input class="date_custom calander_custom" type="text" >
+      </div>
+      </div>
+      <div class="position-relative mt-2 col-md-3 pl-0">
+      <p class="cus_lable" >Notice period</p>
+      <input class="date_custom calander_custom"id="notice" type="text">
+      <p  id="Portal"></p>
+      </div>
+      <div class="position-relative mt-3 col-md-3 pl-0">
+      <p class="cus_lable">Practice</p>
+      <input class="date_custom calander_custom " id="pracs" id="practice" type="text"  >
+      </div>
+      <div class="position-relative mt-3 col-md-3">
+      <p class="cus_lable" >RM</p>
+      <input class="date_custom calander_custom"id="RM" type="text area" >
+      </div>
+      </div>
+      <div class="col-md-12 justify-content-start row lastrow">
+        <div class="position-relative mt-3 col-md-3">
+          <p class="cus_lable" >Contact number</p>
+          <input class="date_custom calander_custom" id="customer"type="text" >
+          <p id="information"></p>
+          </div>
+          <div class="position-relative mt-3 col-md-3">
+          <p class="cus_lable" >Current location</p>
+          <input class="date_custom calander_custom"id="current" type="text" >
+          </div>
+          <div class="position-relative mt-3 col-md-3 pl-0 ml-3" >
+          <p class="cus_lable">Remarks</p>
+          <textarea id="remark" cols="35" rows="5" class="remark_textarea"></textarea>
+          <p id="valuess"></p>
+          </div>
+      </div>
+      <input type="submit" class="submiss"> 
+      <p id="data_value"></p>
+      </div>
+      </div>
+   </form>
+      <script >   
+         function myFunction() {
+           const inpObj = document.getElementById("id1");
+            if (!inpObj.checkValidity()) {
+            document.getElementById("demo").innerHTML = inpObj.validationMessage;
+            }
+}      
+ function validate(evt){
+  var rrf  = document.getElementById("rrf").value;
+  var name = document.getElementById("name").value;
+  var job = document.getElementById("job").value;
+  var phone = document.getElementById("contact").value;
+  var email = document.getElementById("email").value;
+  var pan = document.getElementById("pan").value;
+  var tet = document.getElementById("techinical").value;
+  var remark = document.getElementById("remark").value;
+  var portal =document.getElementById("web").value;
+ 
+  var  data ={
+   id:Math.random(),
+    RRF:rrf,
+    name:name,
+    job_location:job,
+    contact:phone,
+    email:email,
+    pan:pan,
+    tet:tet,
+    remark:remark,
+    notices:portal,
+      
+  } 
+
+
+  if(data.length > 0){
+    newData = []
+    newData.push(data)
+    console.log(newData);
+  }
+  
+
+ if(localStorage.getItem("candidate") === null || localStorage.getItem("candidate") === [] || localStorage.getItem("productList") === undefined )
+{
+    array=[]
+   array.push(data)
+    localStorage.setItem("candidate", JSON.stringify(array));
+}
+else {
+        let productList = JSON.parse(localStorage.getItem("candidate"));
+        productList.push(data);
+        localStorage.setItem("candidate", JSON.stringify(productList));
+      }
+
+ 
+  //console.log("remark",remark);
+  var error_message = document.getElementById("demo");
+  var contact=document.getElementById("practice")
+  error_message.style.padding = "10px";
+  var text;
+  
+  if(name.length < 5){
+    document.getElementById('name').style.border='1px solid red'
+    text = "Please Enter valid Name";
+    document.getElementById("demo").innerHTML = text;
+    return false;
+  }
+
+  if(name.length < 5){
+    document.getElementById('name').style.border='1px solid red'
+    text = "Please Enter valid Name";
+    document.getElementById("demo").innerHTML = text;
+    return false;
+  }
+  if(job.length <= 0){
+    document.getElementById('job').style.border='1px solid red'
+    text = "Please Enter valid Name";
+    document.getElementById("loc").innerHTML = text;
+    return false;   } 
+  
+  if(remark==""){
+   alert("please enter data ");
+   document.getElementById('remark').style.border='1px solid red'
+  text="Please Enter valid remark";
+  document.getElementById("valuess").innerHTML=text;
+  return false;
+  }
+  
+  
+  if(pan.length === 0){
+   alert("please enter data")
+  document.getElementById('pan').style.border='1px solid red'
+  text="Please Enter Valid pan number";
+  document.getElementById('get_pan').innerHTML= text;
+  return false;
+  }
+  
+  if(education.length===0 ){
+    document.getElementById('education').style.border='1px solid red'
+   alert("Please enter valid data");
+     text = "Please Enter Valid data";
+     document.getElementById('educ').innerHTML = text;
+     return false;
+   } 
+   if(portal.length===0 ){
+    document.getElementById('notice').style.border='1px solid red'
+   alert("Please enter valid data");
+     text = "Please Enter Valid data";
+     document.getElementById('Portal').innerHTML = text;
+     return false;
+   } 
+//    if(contact.length===0){
+//    document.getElementById('contact').style.border='1px solid red'
+//     text = "Please Enter Valid data";
+//     document.getElementById('information').innerHTML = text;
+//     return false;
+//   }
+   alert("Form Submitted Successfully!"); 
+  return true;
+   }
+      </script>
+   </body>
+</html>
